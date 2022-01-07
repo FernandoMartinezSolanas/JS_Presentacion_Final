@@ -1,0 +1,64 @@
+.bg-dark{
+    background-color: rgba(255, 255, 255, .8) !important;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    width: 100%;
+    .logo{
+        width: 300px;
+        height: 50px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .nav-link, .navbar-toggler, .navbar-toggler-icon{
+        color: $color-secundario !important;
+        background-color: transparent;
+    }
+    .menuFont{
+        font-family: $fuente-titulo;
+        color: $color-secundario !important;
+        font-size: 1.3em !important;
+        background-image: linear-gradient($color-secundario, $color-secundario);
+        background-size: 0% 0.1em;
+        background-position-x: 0%;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+        transition: background-size 0.2s ease-in-out;
+        background-color: transparent !important;
+        &:hover{
+            background-size: 100% 0.1em;
+        }
+        &:active{
+            background-size: 100% 0.1em;
+        }
+        &:focus{
+            background-size: 100% 0.1em;
+        }
+    }
+    .menuSize {
+        font-size: 20px;
+        background-color: transparent !important;
+    }    
+    .navbar-collapse{
+    justify-content:stretch;
+    }    
+    .navbar-nav{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .dropdown-menu{
+        border: none;
+        background-color: rgba(255, 255, 255, .8) !important;
+    }
+    .dropdown-item{
+        border: none;
+    &:hover{
+        background-color: rgba(255, 255, 255, .8) !important;
+    }
+    &:active{
+        background-color: rgba(255, 255, 255, .8) !important;
+        color: $color-secundario !important;
+        }
+    }
+}
+

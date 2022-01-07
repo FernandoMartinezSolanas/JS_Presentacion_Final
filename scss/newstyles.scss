@@ -1,0 +1,375 @@
+@import "variables";
+@import "header";
+@import "footer";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../images/white-marble.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    main{
+        margin-top: 120px;
+        .mainSection{
+            display: flex;
+            flex-direction: column;
+        }
+        .subtitulo{
+            color: $color-secundario;
+            font-family: $fuente-texto;
+            font-size: 30px;
+            font-weight: 400;
+            text-align: center;
+            margin: -10px 0 0 0.5em;
+        }
+        .w-100{
+            width: 90% !important;
+            margin: 0 auto 0 auto;
+            border-radius: 20px;
+        }
+    }
+}
+
+h1{
+    color: $color-secundario;
+    font-weight: bold;
+    }
+
+.nombreCia{
+    font-family: $fuente-titulo;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin: 1em;
+}
+
+.texto{
+    font-family: $fuente-texto;
+    font-size: 22px;
+    text-align: center;
+    line-height: 2.0;
+    color: $color-primario;
+    border: #d4af37;
+    border-style: solid;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    border-width: 1px;
+    width: 90%;
+    margin: 0 auto 10px auto;
+}
+
+h2{
+    color: $color-primario;
+    font-family: $fuente-texto;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+    margin: 5em 0 1em 0.5em;
+}
+
+.subtituloInicio{
+    color: $color-secundario;
+    font-family: $fuente-titulo;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+.nuestrosProductos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .productoRes{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 90%;
+        font-family: $fuente-texto;
+        border-radius: 1em;
+        background-image: url("../images/vacunobw.jpg");
+        overflow: hidden;
+        transition: background 0.5s ease-in-out;
+        margin: 50px 50px 25px 50px;
+        flex-wrap: nowrap;
+        background-size: cover;
+        &:hover{
+            background: $color-primario;
+        }
+        &:hover .descripcion{
+            visibility: visible;
+        }
+        &:hover #res{
+            visibility: hidden;
+        }
+        #res{
+            color: whitesmoke;
+            font-size: 200px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            z-index: 1;
+        }
+    }
+    
+    .productoCerdo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        font-family: $fuente-texto;
+        border-radius: 1em;
+        background-image: url("../images/cerdobw.jpg");
+        overflow: hidden;
+        transition: background 0.5s ease-in-out;
+        margin: 25px 50px 25px 50px;
+        &:hover{
+            background: $color-primario;
+        }
+        &:hover .descripcion{
+            visibility: visible;
+        }
+        &:hover #cerdo{
+            visibility: hidden;
+        }
+        #cerdo{
+            color: whitesmoke;
+            font-size: 200px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            z-index: 1;
+        }
+    }
+    
+    .productoCordero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        font-family: $fuente-texto;
+        border-radius: 1em;
+        background-image: url("../images/corderobw.jpg");
+        overflow: hidden;
+        transition: background 0.5s ease-in-out;
+        margin: 25px 50px 25px 50px;
+        &:hover{
+            background: $color-primario;
+        }
+        &:hover .descripcion{
+            visibility: visible;
+        }
+        &:hover #cordero{
+            visibility: hidden;
+        }
+        #cordero{
+            color: whitesmoke;
+            font-size: 200px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            z-index: 1;
+        }
+    }
+    
+    .productoPollo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        font-family: $fuente-texto;
+        border-radius: 1em;
+        background-image: url("../images/pollobw.jpg");
+        overflow: hidden;
+        transition: background 0.5s ease-in-out;
+        margin: 25px 50px 50px 50px;
+        &:hover{
+            background: $color-primario;
+        }
+        &:hover .descripcion{
+            visibility: visible;
+        }
+        &:hover #pollo{
+            visibility: hidden;
+        }
+        #pollo{
+            color: whitesmoke;
+            font-size: 200px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            z-index: 1;
+        }
+    }
+}
+
+.descripcion{
+    color: rgb(241, 232, 232);
+    visibility: hidden;
+    transition: all 0.0s ease-in-out;
+    font-size: 30px;
+    position: absolute;
+    width: 90%;
+    padding: 10% 1% 10% 1%;
+}
+
+#res, #pollo, #cerdo, #cordero{
+    color: whitesmoke;
+    font-size: 200px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.mainGrid{
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: 
+    "text1 text1 text1 imagen1 imagen1"
+    "imagen2 imagen2 text2 text2 text2"
+    "text3 text3 text3 imagen3 imagen3"
+    "imagen4 imagen4 text4 text4 text4"
+    ;
+    justify-content: space-evenly;
+    overflow: hidden !important;
+    align-content: space-between;
+    .gridTx1{
+        grid-area: text1;
+    }
+    .gridTx2{
+        grid-area: text2;
+    }
+    .gridTx3{
+        grid-area: text3;
+    }
+    .gridTx4{
+    grid-area: text4;
+    }
+    .gridIm1{
+        grid-area: imagen1;
+    }
+    .gridIm2{
+        grid-area: imagen2;
+    }
+    .gridIm3{
+        grid-area: imagen3;
+    }
+    .gridIm4{
+        grid-area: imagen4;
+    }
+    .gridTx1, .gridTx2, .gridTx3, .gridTx4 {
+        border: #d4af37;
+        border-style: solid;
+        border-width: 1.5px;
+        height: 340px;
+        border-radius: 1em;
+        font-family: $fuente-texto;
+        color: $color-primario;
+        font-size: 30px;
+        padding: 85px 20px 85px 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 99%;
+    }
+    .gridIm1, .gridIm2, .gridIm3, .gridIm4{
+        height: 340px;
+        border-radius: 1em;
+        width: 99%;
+        margin-left: 5px;
+        margin-right: 5px;
+        overflow: hidden !important;
+    }
+    .shrink{
+        width: 100%;
+        height: 100%;
+    }
+    .shrink:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    overflow: hidden !important;
+    }
+    
+}
+
+.certificaciones{
+    width: 30%;
+    height: auto;
+}
+
+.sucursalCaballito, .sucursalPalermo, .sucursalMadero{
+    display: flex;
+    height: 300px;
+    border: #d4af37;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1em;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center;
+    h3{
+        font-family: $fuente-texto;
+        margin: 0%;
+        font-size: 50px;
+        color: $color-primario;
+    }
+}
+
+.form{
+    font-family: $fuente-texto;
+    color: $color-primario !important;
+    width: 90%;
+    margin: 0 auto;
+    .input-group{
+        justify-content: center;
+        .form-control-sm, .form-select-sm{
+            color: $color-primario;
+            width: 100%;
+            &:focus
+            {outline-style:none;} 
+        }
+    }
+}
+
+.btn-primary{
+    width: 100%;
+    background-color: $color-primario;
+    border-color: $color-primario;
+    &:hover{
+        background-color: rgb(53, 53, 53);
+        border-color: rgb(53, 53, 53);
+    }
+}
+
+.btn-check:focus + .btn, .btn:focus{
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn-check:focus + .btn-primary, .btn-primary:focus{
+    box-shadow: none !important;
+    background-color: rgb(53, 53, 53);
+    border-color: rgb(53, 53, 53);
+}
+
+@import "mediaq";
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,277 @@
+@media only screen and (max-width: 992px){
+    .bg-dark .menuFont{
+        font-size: 1.2em !important;
+    }
+
+    .bg-dark .menuSize {
+        font-size: 20px;
+    }
+
+    .mainGrid{
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-areas: 
+        "text1 text1 text1 imagen1 imagen1"
+        "imagen2 imagen2 text2 text2 text2"
+        "text3 text3 text3 imagen3 imagen3"
+        "imagen4 imagen4 text4 text4 text4"
+        ;
+        justify-content: stretch;
+        margin-left: 10px;
+        margin-right: 10px;
+        .gridTx1, .gridTx2, .gridTx3, .gridTx4, .gridIm2, .gridIm1, .gridIm3, .gridIm4{
+            font-size: 20px;
+            width: 99%;
+            margin-left: 0px;
+            margin-right: 0px;
+            row-gap: 10px;
+        }
+    }
+
+    .certificaciones{
+        width: 30%;
+        height: auto;
+    }
+
+    .footerDatos div .footerDatosTexto{
+        margin-bottom: 0%;
+    }
+
+    .nuestrosProductos{
+        .productoRes, .productoCerdo, .productoCordero, .productoPollo{
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 95%;
+        }
+    }
+
+    .descripcion{
+        font-size: 30px;
+        padding: 0 1% 0 1%;
+    }
+
+    .bg-dark .logo{
+        width: 180px;
+}
+}
+
+@media only screen and (max-width: 768px){
+    .bg-dark .menuFont{
+        font-size: 1.0em !important;
+    }
+
+    .bg-dark .menuSize {
+        font-size: 1em;
+    }
+
+    .bg-dark .logo{
+        width: 140px;
+    }
+
+    .footerDatos div .footerDatosTexto{
+        margin-bottom: 0%;
+    }
+
+    .mainGrid{
+        .gridTx1, .gridTx2, .gridTx3, .gridTx4, .gridIm2, .gridIm1, .gridIm3, .gridIm4{
+        font-size: 20px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0%;
+        }
+    }
+
+    .mainGrid{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "imagen1 imagen1 imagen1 imagen1 imagen1"
+        "text1 text1 text1 text1 text1"
+        "imagen2 imagen2 imagen2 imagen2 imagen2"
+        "text2 text2 text2 text2 text2"
+        "imagen3 imagen3 imagen3 imagen3 imagen3"
+        "text3 text3 text3 text3 text3"
+        "imagen4 imagen4 imagen4 imagen4 imagen4"
+        "text4 text4 text4 text4 text4"
+        ;
+        justify-content: stretch;
+        margin-left: 20px;
+        margin-right: 20px;
+        row-gap: 10px;
+    }
+
+    .certificaciones{
+        width: 20%;
+        height: auto;
+    }
+
+    #navbarDropdownMenuLink:focus{
+        outline: none !important;
+    }
+
+    footer{
+        margin-top: 10px;
+        font-size: 0.8em;
+        .logoPequeno{
+            width: 100px;
+            height: 75px;
+        }
+    }
+
+    .nuestrosProductos{
+        .productoRes, .productoCerdo, .productoCordero, .productoPollo{
+            min-height: 220px;
+        }
+    }
+
+    .nuestrosProductos .productoRes #res{
+        font-size: 150px;
+    }
+
+    .nuestrosProductos .productoPollo #pollo{
+        font-size: 150px;
+    }
+
+    .nuestrosProductos .productoCerdo #cerdo{
+        font-size: 150px;
+    }
+
+    .nuestrosProductos .productoCordero #cordero{
+        font-size: 150px;
+    }
+
+    .descripcion{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .bg-dark{
+        background-color: rgba(255, 255, 255, .8) !important;
+        position: sticky;
+        top: 0;
+        z-index: 2000;
+        width: 100%;
+    }
+    
+    .bg-dark .menuFont{
+        font-family: $fuente-titulo;
+        color: $color-secundario;
+        font-size: 1.0em !important;
+    }
+    
+    .bg-dark .menuSize{
+        font-size: 1em;
+        background-color: $color-secundario;
+    }
+
+    .bg-dark .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(77, 74, 74, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+    }
+
+    .bg-dark .navbar-toggler{
+        color: $color-secundario !important;
+    }
+
+    .navbar-toggler:focus{
+        box-shadow:0 0 0 0.05rem;
+    }
+
+        footer{
+        height: 150px;
+        .footerDatos{
+            font-size: 10px;
+        }
+        .footerRedes{
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-right: 5px;
+        }
+        .logoPequeno{
+            width: 75px;
+            height: 75px;
+        }
+    }
+    
+    body main{
+        margin-top: 10px;
+    }
+
+    h2{
+        margin-top: 10px;
+    }
+
+    .mainGrid{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "imagen1 imagen1 imagen1 imagen1 imagen1"
+        "text1 text1 text1 text1 text1"
+        "imagen2 imagen2 imagen2 imagen2 imagen2"
+        "text2 text2 text2 text2 text2"
+        "imagen3 imagen3 imagen3 imagen3 imagen3"
+        "text3 text3 text3 text3 text3"
+        "imagen4 imagen4 imagen4 imagen4 imagen4"
+        "text4 text4 text4 text4 text4"
+        ;
+        justify-content: stretch;
+        margin-left: 20px;
+        margin-right: 20px;
+        row-gap: 10px;
+        .gridTx1, .gridTx2, .gridTx3, .gridTx4, .gridIm2, .gridIm1, .gridIm3, .gridIm4{
+            font-size: 20px;
+            width: 100%;
+            max-width: 100%;
+            margin: 0%;
+        }
+    }
+
+    .certificaciones{
+        width: 20%;
+        height: auto;
+    }
+
+    #navbarDropdownMenuLink:focus{
+        outline: none !important;
+    }
+
+    .nuestrosProductos .productoRes #res{
+        font-size: 100px;
+    }
+
+    .nuestrosProductos .productoPollo #pollo{
+        font-size: 100px;
+    }
+
+    .nuestrosProductos .productoCerdo #cerdo{
+        font-size: 100px;
+    }
+
+    .nuestrosProductos .productoCordero #cordero{
+        font-size: 100px;
+    }
+
+    .descripcion{
+        font-size: 1em;
+    }
+
+    .sucursalCaballito, .sucursalMadero, .sucursalPalermo{
+        flex-wrap: wrap;
+    }
+
+    iframe{
+        width: 95%;
+        height: auto;
+    }
+    .nuestrosProductos{
+        .productoRes, .productoCerdo, .productoCordero, .productoPollo{
+            min-height: 180px;
+        }
+    }
+    .descripcion{
+        padding: 5% 1% 5% 1%;
+    }
+}

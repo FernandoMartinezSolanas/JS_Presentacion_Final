@@ -1,0 +1,46 @@
+footer{
+    height: 75px;
+    box-sizing: content-box;
+    color: $color-primario;
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    font-family: $fuente-texto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-color: $color-primario;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+    border-style: solid;
+    border-width: 1px;
+    .logoPequeno{
+        width: 150px;
+        height: 50px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footerDatos{
+        height: 75px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        div{
+            display: flex;
+            flex-direction: column;
+            height: 75px;
+            margin: 0 10px 0 10px;
+            align-items: center;
+            justify-content: center;
+            .footerDatosTexto{
+                margin-bottom: 0%;
+                text-align: center;
+            }
+        }
+    }
+    .footerRedes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    }
+}

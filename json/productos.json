@@ -1,0 +1,11 @@
+[
+{"nombre": "Lomo", "precio": 1000, "stock": 100, "imagen": "../images/lomo.jpg", "ID": 1, "raza": "Res"},
+{"nombre": "Entraña", "precio": 1000, "stock": 100, "imagen": "../images/entrana.jpg", "ID": 2, "raza": "Res"},
+{"nombre": "Bondiola", "precio": 800, "stock": 100, "imagen": "../images/bondiola.jpg", "ID": 3, "raza": "Cerdo"},
+{"nombre": "Matambre", "precio": 800, "stock": 100, "imagen": "../images/matambre.jpg", "ID": 4, "raza": "Cerdo"},
+{"nombre": "Ribs", "precio": 500, "stock": 100, "imagen": "../images/ribs.jpg", "ID": 5, "raza": "Cerdo"},
+{"nombre": "Pollo", "precio": 500, "stock": 100, "imagen": "../images/polloentero.jpg", "ID": 6, "raza": "Pollo"},
+{"nombre": "Pechuga", "precio": 400, "stock": 100, "imagen": "../images/pechuga.PNG", "ID": 7, "raza": "Pollo"},
+{"nombre": "Costillar", "precio": 400, "stock": 100, "imagen": "../images/costillar.jpg", "ID": 8, "raza": "Cordero"},
+{"nombre": "Paleta", "precio": 300, "stock": 100, "imagen": "../images/paleta.jpg", "ID": 9, "raza": "Cordero"}
+]

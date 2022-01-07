@@ -1,0 +1,705 @@
+.bg-dark {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  /*position: fixed;
+  top: 0;*/
+  z-index: 2000;
+  width: 100%; }
+  .bg-dark .logo {
+    width: 300px;
+    height: 50px;
+    padding-left: 0;
+    padding-right: 0; }
+  .bg-dark .nav-link, .bg-dark .navbar-toggler, .bg-dark .navbar-toggler-icon {
+    color: #303030 !important;
+    background-color: transparent; }
+  .bg-dark .menuFont {
+    font-family: "Bebas Neue";
+    color: #303030 !important;
+    font-size: 1.3em !important;
+    background-image: linear-gradient(#303030, #303030);
+    background-size: 0% 0.1em;
+    background-position-x: 0%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+    background-color: transparent !important; }
+    .bg-dark .menuFont:hover {
+      background-size: 100% 0.1em; }
+    .bg-dark .menuFont:active {
+      background-size: 100% 0.1em; }
+    .bg-dark .menuFont:focus {
+      background-size: 100% 0.1em; }
+  .bg-dark .menuSize {
+    font-size: 20px;
+    background-color: transparent !important; }
+  .bg-dark .navbar-collapse {
+    justify-content: stretch; }
+  .bg-dark .navbar-nav {
+    width: 100%;
+    justify-content: space-evenly; }
+  .bg-dark .dropdown-menu {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8) !important; }
+  .bg-dark .dropdown-item {
+    border: none; }
+    .bg-dark .dropdown-item:hover {
+      background-color: rgba(255, 255, 255, 0.8) !important; }
+    .bg-dark .dropdown-item:active {
+      background-color: rgba(255, 255, 255, 0.8) !important;
+      color: #303030 !important; }
+
+footer {
+  width: 100%
+  position: absolute;
+  height: 75px;
+  box-sizing: content-box;
+  color: #4d4a4a;
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  font-family: "Roboto Condensed";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-color: #4d4a4a;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  border-style: solid;
+  border-width: 1px; }
+  footer .logoPequeno {
+    width: 150px;
+    height: 50px;
+    padding-left: 0;
+    padding-right: 0; }
+  footer .footerDatos {
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    footer .footerDatos div {
+      display: flex;
+      flex-direction: column;
+      height: 75px;
+      margin: 0 10px 0 10px;
+      align-items: center;
+      justify-content: center; }
+      footer .footerDatos div .footerDatosTexto {
+        margin-bottom: 0%;
+        text-align: center; }
+  footer .footerRedes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: url("../images/white-marble.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+  body main {
+    margin-top: 50px; }/*OJO CON ESTO*/
+    body main .mainSection {
+      display: flex;
+      flex-direction: column; }
+    body main .subtitulo {
+      color: #303030;
+      font-family: "Roboto Condensed";
+      font-size: 30px;
+      font-weight: 400;
+      text-align: center;
+      margin: -10px 0 0 0.5em; }
+    body main .w-100 {
+      width: 90% !important;
+      margin: 0 auto 0 auto;
+      border-radius: 20px; }
+
+h1 {
+  color: #303030;
+  font-weight: bold; }
+
+.nombreCia {
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  margin: 1em; }
+
+.texto {
+  font-family: "Roboto Condensed";
+  font-size: 22px;
+  text-align: center;
+  line-height: 2.0;
+  color: #4d4a4a;
+  border: #d4af37;
+  border-style: solid;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  border-width: 1px;
+  width: 90%;
+  margin: 0 auto 10px auto; }
+
+h2 {
+  color: #4d4a4a;
+  font-family: "Roboto Condensed";
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: 5em 0 1em 0.5em; }
+
+.subtituloInicio {
+  color: #303030;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: 1em 0 1em 0; }
+
+.nuestrosProductos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .nuestrosProductos .productoRes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    font-family: "Roboto Condensed";
+    border-radius: 1em;
+    background-image: url("../images/vacunobw.jpg");
+    overflow: hidden;
+    transition: background 0.5s ease-in-out;
+    margin: 50px 50px 25px 50px;
+    flex-wrap: nowrap;
+    background-size: cover; }
+    .nuestrosProductos .productoRes:hover {
+      background: #4d4a4a; }
+    .nuestrosProductos .productoRes:hover .descripcion {
+      visibility: visible; }
+    .nuestrosProductos .productoRes:hover #res {
+      visibility: hidden; }
+    .nuestrosProductos .productoRes #res {
+      color: whitesmoke;
+      font-size: 200px;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      z-index: 1; }
+  .nuestrosProductos .productoCerdo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    font-family: "Roboto Condensed";
+    border-radius: 1em;
+    background-image: url("../images/cerdobw.jpg");
+    overflow: hidden;
+    transition: background 0.5s ease-in-out;
+    margin: 25px 50px 25px 50px; }
+    .nuestrosProductos .productoCerdo:hover {
+      background: #4d4a4a; }
+    .nuestrosProductos .productoCerdo:hover .descripcion {
+      visibility: visible; }
+    .nuestrosProductos .productoCerdo:hover #cerdo {
+      visibility: hidden; }
+    .nuestrosProductos .productoCerdo #cerdo {
+      color: whitesmoke;
+      font-size: 200px;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      z-index: 1; }
+  .nuestrosProductos .productoCordero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    font-family: "Roboto Condensed";
+    border-radius: 1em;
+    background-image: url("../images/corderobw.jpg");
+    overflow: hidden;
+    transition: background 0.5s ease-in-out;
+    margin: 25px 50px 25px 50px; }
+    .nuestrosProductos .productoCordero:hover {
+      background: #4d4a4a; }
+    .nuestrosProductos .productoCordero:hover .descripcion {
+      visibility: visible; }
+    .nuestrosProductos .productoCordero:hover #cordero {
+      visibility: hidden; }
+    .nuestrosProductos .productoCordero #cordero {
+      color: whitesmoke;
+      font-size: 200px;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      z-index: 1; }
+  .nuestrosProductos .productoPollo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    font-family: "Roboto Condensed";
+    border-radius: 1em;
+    background-image: url("../images/pollobw.jpg");
+    overflow: hidden;
+    transition: background 0.5s ease-in-out;
+    margin: 25px 50px 50px 50px; }
+    .nuestrosProductos .productoPollo:hover {
+      background: #4d4a4a; }
+    .nuestrosProductos .productoPollo:hover .descripcion {
+      visibility: visible; }
+    .nuestrosProductos .productoPollo:hover #pollo {
+      visibility: hidden; }
+    .nuestrosProductos .productoPollo #pollo {
+      color: whitesmoke;
+      font-size: 200px;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      z-index: 1; }
+
+.descripcion {
+  color: #f1e8e8;
+  visibility: hidden;
+  transition: all 0.0s ease-in-out;
+  font-size: 30px;
+  position: absolute;
+  width: 90%;
+  padding: 10% 1% 10% 1%; }
+
+#res, #pollo, #cerdo, #cordero {
+  color: whitesmoke;
+  font-size: 200px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  z-index: 1; }
+
+.mainGrid {
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-areas: "text1 text1 text1 imagen1 imagen1"
+ "imagen2 imagen2 text2 text2 text2"
+ "text3 text3 text3 imagen3 imagen3"
+ "imagen4 imagen4 text4 text4 text4";
+  justify-content: space-evenly;
+  overflow: hidden !important;
+  align-content: space-between; }
+  .mainGrid .gridTx1 {
+    grid-area: text1; }
+  .mainGrid .gridTx2 {
+    grid-area: text2; }
+  .mainGrid .gridTx3 {
+    grid-area: text3; }
+  .mainGrid .gridTx4 {
+    grid-area: text4; }
+  .mainGrid .gridIm1 {
+    grid-area: imagen1; }
+  .mainGrid .gridIm2 {
+    grid-area: imagen2; }
+  .mainGrid .gridIm3 {
+    grid-area: imagen3; }
+  .mainGrid .gridIm4 {
+    grid-area: imagen4; }
+  .mainGrid .gridTx1, .mainGrid .gridTx2, .mainGrid .gridTx3, .mainGrid .gridTx4 {
+    border: #d4af37;
+    border-style: solid;
+    border-width: 1.5px;
+    height: 340px;
+    border-radius: 1em;
+    font-family: "Roboto Condensed";
+    color: #4d4a4a;
+    font-size: 30px;
+    padding: 85px 20px 85px 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 99%; }
+  .mainGrid .gridIm1, .mainGrid .gridIm2, .mainGrid .gridIm3, .mainGrid .gridIm4 {
+    height: 340px;
+    border-radius: 1em;
+    width: 99%;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden !important; }
+  .mainGrid .shrink {
+    width: 100%;
+    height: 100%; }
+  .mainGrid .shrink:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    overflow: hidden !important; }
+
+.certificaciones {
+  width: 30%;
+  height: auto; }
+
+.sucursalCaballito, .sucursalPalermo, .sucursalMadero {
+  display: flex;
+  height: 300px;
+  border: #d4af37;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1em;
+  margin: 20px;
+  justify-content: space-around;
+  align-items: center; }
+  .sucursalCaballito h3, .sucursalPalermo h3, .sucursalMadero h3 {
+    font-family: "Roboto Condensed";
+    margin: 0%;
+    font-size: 50px;
+    color: #4d4a4a; }
+
+.form {
+  font-family: "Roboto Condensed";
+  color: #4d4a4a !important;
+  width: 90%;
+  margin: 0 auto; }
+  .form .input-group {
+    justify-content: center; }
+    .form .input-group .form-control-sm, .form .input-group .form-select-sm {
+      color: #4d4a4a;
+      width: 100%; }
+      .form .input-group .form-control-sm:focus, .form .input-group .form-select-sm:focus {
+        outline-style: none; }
+
+.btn-primary {
+  width: 100%;
+  background-color: #4d4a4a;
+  border-color: #4d4a4a; }
+  .btn-primary:hover {
+    background-color: #353535;
+    border-color: #353535; }
+
+.btn-check:focus + .btn, .btn:focus {
+  box-shadow: none !important;
+  outline: none !important; }
+
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+  box-shadow: none !important;
+  background-color: #353535;
+  border-color: #353535; }
+
+.carrito{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /*margin: 0 20px 20px 20px;*/
+}
+.producto{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  border:#4d4a4a;
+  border-style: solid;
+  border-width: 1.5px;
+  margin: 20px 10px;
+  background-color: white;
+  border-radius: 10px;
+  }
+
+.imagenProd{
+height: 150px;
+width: 150px;
+}
+
+.boton{
+  width: 90%;
+  border-radius: 5px;
+  background-color:black;
+  color: white;
+  border-style: solid;
+  border-color: #4d4a4a;
+}
+
+.producto input{
+  width: 90%;
+  border-radius: 5px;
+}
+
+.item{
+    font-family: "Roboto Condensed";
+    color: white;
+    font-size: 1.3em;
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.item p{
+  margin-bottom: 0px;
+}
+
+#inicio{
+  margin: -30px 0 0 0.5em;
+}
+
+.mas{
+  width: 25px;
+  font-size: 0.5em;
+}
+
+.carritoClose{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.carritoClose p{
+  margin-bottom: 0px;
+}
+
+.total{
+  font-family: "Roboto Condensed";
+  color: white;
+  font-size: 1.8em;
+  padding-left: 32px;
+  border: white;
+  border-width: medium;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+#carritoIcon {
+  font-size: 1.3em;
+}
+
+.containerCarrito{
+  position: relative;
+}
+
+.containerCarrito p{
+  font-size: 10px;
+  background-color: #e04646;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  position:absolute;
+  border-radius: 100%;
+  opacity: 0.95;
+  transform: translate(130%, -250%);
+  height: 20px;
+  width: 20px;
+  color: black;
+  font-weight: bolder;
+ }
+
+.finalizarCompra{
+  margin: 20px auto 0 auto;
+  width: 90%;
+  font-family: "Bebas Neue";;
+  color: black;
+  display: block;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.filtros{
+  background-color: none;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px;
+  border-width: 1px;
+  width: 95%;
+}
+
+.boton2{
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  background-color:black;
+  color: white;
+  border-style: solid;
+  border-color: #4d4a4a;
+}
+
+.filtro1{
+  margin-bottom: 10px;
+}
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+  .bg-dark .menuFont {
+    font-size: 1.2em !important; }
+  .bg-dark .menuSize {
+    font-size: 20px; }
+  .mainGrid {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: "text1 text1 text1 imagen1 imagen1"
+ "imagen2 imagen2 text2 text2 text2"
+ "text3 text3 text3 imagen3 imagen3"
+ "imagen4 imagen4 text4 text4 text4";
+    justify-content: stretch;
+    margin-left: 10px;
+    margin-right: 10px; }
+    .mainGrid .gridTx1, .mainGrid .gridTx2, .mainGrid .gridTx3, .mainGrid .gridTx4, .mainGrid .gridIm2, .mainGrid .gridIm1, .mainGrid .gridIm3, .mainGrid .gridIm4 {
+      font-size: 20px;
+      width: 99%;
+      margin-left: 0px;
+      margin-right: 0px;
+      row-gap: 10px; }
+  .certificaciones {
+    width: 30%;
+    height: auto; }
+  .footerDatos div .footerDatosTexto {
+    margin-bottom: 0%; }
+  .nuestrosProductos .productoRes, .nuestrosProductos .productoCerdo, .nuestrosProductos .productoCordero, .nuestrosProductos .productoPollo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 95%; }
+  .descripcion {
+    font-size: 30px;
+    padding: 0 1% 0 1%; }
+  .bg-dark .logo {
+    width: 180px; } }
+
+@media only screen and (max-width: 768px) {
+  .bg-dark .menuFont {
+    font-size: 1.0em !important; }
+  .bg-dark .menuSize {
+    font-size: 1em; }
+  .bg-dark .logo {
+    width: 140px; }
+  .footerDatos div .footerDatosTexto {
+    margin-bottom: 0%; }
+  .mainGrid .gridTx1, .mainGrid .gridTx2, .mainGrid .gridTx3, .mainGrid .gridTx4, .mainGrid .gridIm2, .mainGrid .gridIm1, .mainGrid .gridIm3, .mainGrid .gridIm4 {
+    font-size: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0%; }
+  .mainGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "imagen1 imagen1 imagen1 imagen1 imagen1"
+ "text1 text1 text1 text1 text1"
+ "imagen2 imagen2 imagen2 imagen2 imagen2"
+ "text2 text2 text2 text2 text2"
+ "imagen3 imagen3 imagen3 imagen3 imagen3"
+ "text3 text3 text3 text3 text3"
+ "imagen4 imagen4 imagen4 imagen4 imagen4"
+ "text4 text4 text4 text4 text4";
+    justify-content: stretch;
+    margin-left: 20px;
+    margin-right: 20px;
+    row-gap: 10px; }
+  .certificaciones {
+    width: 20%;
+    height: auto; }
+  #navbarDropdownMenuLink:focus {
+    outline: none !important; }
+  footer {
+    margin-top: 10px;
+    font-size: 0.8em; }
+    footer .logoPequeno {
+      width: 100px;
+      height: 75px; }
+  .nuestrosProductos .productoRes, .nuestrosProductos .productoCerdo, .nuestrosProductos .productoCordero, .nuestrosProductos .productoPollo {
+    min-height: 220px; }
+  .nuestrosProductos .productoRes #res {
+    font-size: 150px; }
+  .nuestrosProductos .productoPollo #pollo {
+    font-size: 150px; }
+  .nuestrosProductos .productoCerdo #cerdo {
+    font-size: 150px; }
+  .nuestrosProductos .productoCordero #cordero {
+    font-size: 150px; }
+  .descripcion {
+    font-size: 1.5em; } }
+
+@media only screen and (max-width: 576px) {
+  .bg-dark {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    width: 100%; }
+  .bg-dark .menuFont {
+    font-family: "Bebas Neue";
+    color: #303030;
+    font-size: 1.0em !important; }
+  .bg-dark .menuSize {
+    font-size: 1em;
+    background-color: #303030; }
+  .bg-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(77, 74, 74, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important; }
+  .bg-dark .navbar-toggler {
+    color: #303030 !important; }
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.05rem; }
+  footer {
+    height: 150px; }
+    footer .footerDatos {
+      font-size: 10px; }
+    footer .footerRedes {
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-right: 5px; }
+    footer .logoPequeno {
+      width: 75px;
+      height: 75px; }
+  body main {
+    margin-top: 10px; }
+  h2 {
+    margin-top: 10px; }
+  .mainGrid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "imagen1 imagen1 imagen1 imagen1 imagen1"
+ "text1 text1 text1 text1 text1"
+ "imagen2 imagen2 imagen2 imagen2 imagen2"
+ "text2 text2 text2 text2 text2"
+ "imagen3 imagen3 imagen3 imagen3 imagen3"
+ "text3 text3 text3 text3 text3"
+ "imagen4 imagen4 imagen4 imagen4 imagen4"
+ "text4 text4 text4 text4 text4";
+    justify-content: stretch;
+    margin-left: 20px;
+    margin-right: 20px;
+    row-gap: 10px; }
+    .mainGrid .gridTx1, .mainGrid .gridTx2, .mainGrid .gridTx3, .mainGrid .gridTx4, .mainGrid .gridIm2, .mainGrid .gridIm1, .mainGrid .gridIm3, .mainGrid .gridIm4 {
+      font-size: 20px;
+      width: 100%;
+      max-width: 100%;
+      margin: 0%; }
+  .certificaciones {
+    width: 20%;
+    height: auto; }
+  #navbarDropdownMenuLink:focus {
+    outline: none !important; }
+  .nuestrosProductos .productoRes #res {
+    font-size: 100px; }
+  .nuestrosProductos .productoPollo #pollo {
+    font-size: 100px; }
+  .nuestrosProductos .productoCerdo #cerdo {
+    font-size: 100px; }
+  .nuestrosProductos .productoCordero #cordero {
+    font-size: 100px; }
+  .descripcion {
+    font-size: 1em; }
+  .sucursalCaballito, .sucursalMadero, .sucursalPalermo {
+    flex-wrap: wrap; }
+  iframe {
+    width: 95%;
+    height: auto; }
+  .nuestrosProductos .productoRes, .nuestrosProductos .productoCerdo, .nuestrosProductos .productoCordero, .nuestrosProductos .productoPollo {
+    min-height: 180px; }
+  .descripcion {
+    padding: 5% 1% 5% 1%; } }
